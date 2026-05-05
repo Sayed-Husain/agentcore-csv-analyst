@@ -195,9 +195,8 @@ ui/
 data/
 └── sample_sales.csv        25-row test fixture
 docs/                       Screenshots + architecture diagram
-.bedrock_agentcore.yaml     Toolkit deploy config (committed)
+.bedrock_agentcore.yaml     Toolkit deploy config (gitignored — env-specific)
 .bedrock_agentcore/         Toolkit-generated artifacts (gitignored)
-TEARDOWN.md                 Resource inventory + cleanup commands
 ```
 
 Three deliberate properties:
@@ -230,10 +229,9 @@ For local iteration without redeploying, `python -m agent.runtime` runs the
 same code on `localhost:8080`. For scripted invocation of the deployed runtime,
 `aws bedrock-agentcore invoke-agent-runtime --payload fileb://payload.json`.
 
-Resources created by `deploy` and how to delete each: see
-[**TEARDOWN.md**](TEARDOWN.md). The toolkit's `agentcore destroy` covers most
-of them; IAM roles, the S3 source bucket, and CloudWatch log groups need
-explicit cleanup.
+To clean up: `agentcore destroy` removes the runtime, ECR repo, and the
+toolkit's CodeBuild project. The execution IAM role, the source S3 bucket, and
+the CloudWatch log groups stay behind and need explicit deletion.
 
 ---
 

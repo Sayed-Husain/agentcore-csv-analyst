@@ -1,0 +1,26 @@
+date,region,product,units_sold,revenue
+2025-01-05,North,Widget A,120,2400.00
+2025-01-12,South,Widget B,85,2550.00
+2025-01-18,East,Gadget X,42,4200.00
+2025-01-25,West,Widget A,67,1340.00
+2025-02-03,North,Gadget X,55,5500.00
+2025-02-10,South,Widget A,90,1800.00
+2025-02-17,East,Widget B,73,2190.00
+2025-02-24,West,Gadget Y,38,5320.00
+2025-03-04,North,Widget B,110,3300.00
+2025-03-11,South,Gadget X,48,4800.00
+2025-03-18,East,Widget A,82,1640.00
+2025-03-25,West,Widget B,95,2850.00
+2025-04-01,North,Gadget Y,29,4060.00
+2025-04-08,South,Widget A,75,1500.00
+2025-04-15,East,Gadget X,61,6100.00
+2025-04-22,West,Widget A,103,2060.00
+2025-04-29,North,Widget B,68,2040.00
+2025-05-06,South,Gadget Y,44,6160.00
+2025-05-13,East,Widget A,89,1780.00
+2025-05-20,West,Gadget X,52,5200.00
+2025-05-27,North,Widget A,135,2700.00
+2025-06-03,South,Widget B,77,2310.00
+2025-06-10,East,Gadget Y,33,4620.00
+2025-06-17,West,Widget A,118,2360.00
+2025-06-24,North,Gadget X,40,4000.00
